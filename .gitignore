@@ -1,0 +1,31 @@
+# Build
+bin/
+obj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# User files
+*.user
+*.suo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+
+# Coverage
+coverage/
