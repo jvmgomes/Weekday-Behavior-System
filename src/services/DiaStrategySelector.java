@@ -22,6 +22,10 @@ public class DiaStrategySelector {
     }
 
     public IDiaStrategy getStrategy(String dia) {
-        return strategies.getOrDefault(dia.toLowerCase(), new NullDiaStrategy());
+        if (dia == null || dia.trim().isEmpty()) {
+            return new NullDiaStrategy();
+        }
+
+        return strategies.getOrDefault(dia.trim().toLowerCase(), new NullDiaStrategy());
     }
 }
